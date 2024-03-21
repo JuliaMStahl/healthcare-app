@@ -30,7 +30,7 @@ class _HomePageState extends State<HomePage> {
       appBar: const HomeAppBar(),
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.all(16),
+          padding: const EdgeInsets.fromLTRB(16, 8, 16, 16),
           child: Column(
             children: [
               const HomeSearchBar(),
@@ -51,7 +51,7 @@ class _HomePageState extends State<HomePage> {
                       iconBackgroundColor: AppColors.tertiaryBlue,
                       backgroundColor: AppColors.septenaryGray,
                       iconPath: AppImages.menuBoardIcon,
-                      onTap: () => context.goNamed('book-appointment'),
+                      onTap: () => context.pushNamed('book-appointment'),
                     ),
                     const HomeProductCard(
                       title: 'Appointment\nwith QR',
